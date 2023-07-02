@@ -12,7 +12,7 @@ body {
 .top-section {
     padding:1px;
     margin-bottom: 5px;
-    background-color: rgb(153, 196, 236);
+    background-color: rgba(153, 196, 236, 0.779);
     display:flex;
     flex-direction:row;
 }
@@ -22,6 +22,7 @@ body {
     width:650px;
     margin-right: 5px;
 }
+
 .top-right {
     text-align: right ;
     padding:10px;
@@ -33,12 +34,20 @@ body {
 
 
 .name, .short-description{
-    padding-left: 10px;
+    padding-left: 15px;
+    line-height: 1;
+}
+
+
+.name h2{
+    margin-top: -5px;
+    /* font-display: ; */
 }
 
 .info{
     padding-bottom:5px;
     font-size: medium;
+    letter-spacing: 2px;
 }
 .small-image{
     width: 20px;
@@ -57,8 +66,17 @@ body {
     padding: 10px;
     margin: 2px;
     flex-direction: row;
+    overflow-x: auto;
     overflow-y: auto;
 }
+
+/* .programming{
+    width: 500px;
+    padding: 10px;
+    margin: 2px;
+    flex-direction: column;
+    overflow-y: auto;
+} */
 
 .left{
   width: 50%;
@@ -118,6 +136,8 @@ padding-right: 10px;
 font-size: small;
 }
 
+
+
 .educationEntry{
 margin-left: 5px;
 padding-left: 10px;
@@ -128,6 +148,7 @@ flex-direction:column;
 
 }
 
+
 .educationEntry::before{
 content: "";
 position: absolute;
@@ -135,9 +156,12 @@ width: 5px;
 height: 5px;
 background: rgb(128, 120, 120);
 border-radius: 999px;
-left: -13px;
+left: -8.5px;
 top: 15px;
 }
+
+
+
 
 .row {
 display: flex;
@@ -176,8 +200,28 @@ margin-top: 15px;
 align-items: center; 
 }
 
+
+    
+
 .location {
 margin-top: 15px;
 margin-left: 75px; 
 justify-content:right;
 }
+
+#educationContainer{
+    display:flex;
+    flex-direction: row;
+}
+
+.dinamicEntry{
+    display:flex;
+    flex-direction: column;
+}
+
+
+.entry-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
